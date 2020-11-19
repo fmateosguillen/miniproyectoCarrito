@@ -13,7 +13,7 @@ export class ArticulosComponentComponent implements OnInit {
   constructor() { 
     let art1:Articulo = {
       id: 1, 
-      imagen: "",
+      imagen: "../../assets/img/zapato.jpg",
       nombre: "Zapato",
       descripcion: "wleblbwergbñpwibeg",
       color: "marrón",
@@ -25,6 +25,13 @@ export class ArticulosComponentComponent implements OnInit {
     this.listaArticulos.push(art1);
   }
 
+  /*
+  aumentar(){
+    let inicio = 1;
+    let cantidad = document.getElementById('unidades') = ++inicio;
+  }
+  */
+ 
   ngOnInit(): void {
   }
 
