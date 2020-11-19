@@ -1,0 +1,17 @@
+<table>
+    <thead>
+        <th>ID</th>
+        <th>PRODUCTO</th>
+        <th>NOMBRE</th>
+        <th>COLOR</th>
+        <th>TALLA</th>
+        <th>CANTIDAD</th>
+        <th>PRECIO</th>
+        <th>PRECIO TOTAL</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let Articulo of listaArticulos">
+            <app-articulos-component [articulo] = "Articulo"></app-articulos-component>
+        </tr> 
+    </tbody>
+</table>

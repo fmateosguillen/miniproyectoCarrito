@@ -1,0 +1,40 @@
+<!--
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Imagen</th>
+        <th>Producto</th>
+        <th>Color</th>
+        <th>Talla</th>
+        <th>Unidades</th>
+        <th>Precio</th>
+    </tr>
+    <tr *ngFor="let articulo of listaArticulos">
+        <td>{{articulo.id}}</td>
+        <td><img src={{articulo.imagen}}></td>
+        <td>{{articulo.nombre}}</td>
+        <td>{{articulo.color}}</td>
+        <td>{{articulo.talla}}</td>
+        <td>{{articulo.cantidad}}
+            <button id="aumentar" (click)="aumentar()">+</button>
+            <button id="disminuir" (click)="reducir()">-</button>
+        </td>
+    </tr>
+</table>
+Esto lo he cambiado a lista-articulos de momento
+-->
+<td>{{articulo.id}}</td>
+<td><img src={{articulo.imagen}}></td>
+<td>{{articulo.nombre | uppercase}}</td>
+<td>{{articulo.color}}</td>
+<td>{{articulo.talla}}</td>
+<td>{{articulo.cantidad}}
+    <button (click) = "aumentar()">+</button>
+    <button (click) = "reducir()">-</button>
+</td>
+<td class = "rebajado" *ngIf="articulo.rebajado">{{articulo.precioRebajado | currency:'EUR'}}</td>
+<td *ngIf="!articulo.rebajado">{{articulo.precioOriginal | currency:'EUR'}}</td>
+<td>{{articulo.total | currency:'EUR'}}</td>    
+
+    
+

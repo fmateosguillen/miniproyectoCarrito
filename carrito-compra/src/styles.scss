@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    height: 100%;
+}
+
+table{
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+}
+
+table img{
+    height: 60px;
+}
+
+.rebajado{
+    color: #0eabad;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 10px;
+    background-color: #a1a1a1;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    width: 100%;
+    margin: auto;
+}
